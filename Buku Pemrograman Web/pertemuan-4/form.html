@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Membuat Form</title>
+</head>
+<body>
+    <h1 align="center">Formulir Pendaftaran Mahasiswa Baru</h1>
+    <hr>
+
+    <table width="50%" align="center" style="background-color: salmon;">
+        <tbody style="color: black">
+            <tr>
+                <td>NIM</td>
+                <td>
+                    : <input type="text" name="nim" size="8">
+                </td>
+            </tr>
+
+            <tr>
+                <td>NAMA MAHASISWA</td>
+                <td>
+                    : <input type="text" name="mahasiswa" size="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>JURUSAN</td>
+                <td>
+                    : <select name="jurusan" id="">
+                        <option value="TEKNIK-INFORMATIKA">TEKNIK INFORMATIKA</option>
+                        <option value="TEKNIK-KOMPUTER">TEKNIK KOMPUTER</option>
+                        <option value="DKV">DESAIN KOMUNIKASI VISUAL</option>
+                        <option value="MANAJEMEN">MANAJEMEN</option>
+                        <option value="TEKNIK-SIPIL">TEKNIK SIPIL</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>JENIS KELAMIN</td>
+                <td>
+                    <input type="radio" name="JK" checked> Laki-Laki 
+                    <input type="radio" name="JK"> Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td>HOBBY</td>
+                <td>
+                    <input type="checkbox" name="coding"> Coding
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="badminton"> Badminton
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="berenang"> Berenang
+                </td>
+            </tr>
+
+            <tr>
+                <td>KETERANGAN</td>
+                <td>
+                    <textarea name="komentar" id="" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <center>
+        <input type="submit" name="submit">
+        <input type="reset" name="reset"> 
+    </center>
+</body>
+</html>

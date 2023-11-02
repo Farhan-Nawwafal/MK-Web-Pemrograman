@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikin Format KTP</title>
+</head>
+<body>
+    <h1 align="center">
+        PROVINSI BANTEN <br>
+        KABUPATEN TANGERANG
+    </h1>
+    <hr>
+    <table width="50%" align="center" border="0">
+        <tbody>
+            <tr>
+                <td>NIK</td>
+                <td>
+                    : <input type="text" size="16" placeholder="isi NIK kamu">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nama</td>
+                <td>
+                    : <input type="text" size="30" placeholder="isi nama kamu">,
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Tempat/Tgl Lahir</td>
+                <td>
+                    : <input type="text" size="16" placeholder="tempat lahir kamu">,
+                    <input type="date">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    : <select name="jenis-kelamin" id="">
+                        <option value="laki-laki">Laki-laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </select>,
+                    Gol. Darah
+                    : <select name="goldar" id="">
+                        <option value="A">A</option>
+                        <option value="O">O</option>
+                        <option value="AB">AB</option>
+                        <option value="B">B</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td>
+                    : <input type="text" placeholder="alamat kamu">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">RT/RW</td>
+                <td>
+                    : <select name="rt" id="">
+                        <option value="001">001</option>
+                        <option value="002">002</option>
+                        <option value="003">003</option>
+                        <option value="004">004</option>
+                        <option value="005">005</option>
+                        <option value="006">006</option>
+                        <option value="007">007</option>
+                        <option value="008">008</option>
+                        <option value="009">009</option>
+                    </select>
+
+                    <select name="rw" id="">
+                        <option value="001">001</option>
+                        <option value="002">002</option>
+                        <option value="003">003</option>
+                        <option value="004">004</option>
+                        <option value="005">005</option>
+                        <option value="006">006</option>
+                        <option value="007">007</option>
+                        <option value="008">008</option>
+                        <option value="009">009</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">Kel/Desa</td>
+                <td>
+                    : <input type="text" placeholder="kelurahan/desa kamu">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">Kecamatan</td>
+                <td>
+                    : <input type="text" placeholder="isi kecamatan kamu">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Agama</td>
+                <td>
+                    : <select name="agama" id="">
+                        <option value="islam">Islam</option>
+                        <option value="konghucu">Konghucu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="kristen">Kristen</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Status Perkawinan</td>
+                <td>
+                    : <select name="status" id="">
+                        <option value="belum-kawin">Belum Kawin</option>
+                        <option value="janda">Janda</option>
+                        <option value="duda">Duda</option>
+                        <option value="sudah-nikah">Sudah Nikah</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Pekerjaan</td>
+                <td>
+                    : <input type="text" placeholder="isi pekerjaan kamu">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Kewarganegaraan </td>
+                <td>
+                    : <select name="Kewarganegaraan" id="">
+                        <option value="WNI">WNI</option>
+                        <option value="WNA">WNA</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Berlaku Hingga </td>
+                <td>
+                    : <input type="date">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <center>
+        <input type="submit" value="Submit" name="submit">
+        <input type="reset" value="Reset" name="reset">
+    </center>
+</body>
+</html>
