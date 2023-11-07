@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3 Buku Pemrograman Web</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1 id="judul">Pengisian Data Pribadi</h1>
+    <div class="container">
+        <div class="formulir">
+            <table width="100%">
+                <tbody align="center">
+                    <!-- NAMA -->
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>
+                            : <input type="text" placeholder="Isi nama lengkap" id="nama">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>NIK</td>
+                        <td>
+                            : <input type="text" placeholder="Isi NIK" id="nik">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tempat Lahir</td>
+                        <td>
+                            : <input type="text" placeholder="Isi tempat lahir" id="tempat-lahir">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>
+                            : <input type="text" placeholder="Isi tanggal lahir" id="tanggal-lahir">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tahun Lahir</td>
+                        <td>
+                            : <input type="text" placeholder="Isi tahun lahir" id="tahun-lahir">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button">
+                <button id="kirim">kirim</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="container-image">
+            <h3>Upload Image Anda</h3>
+            <div class="image">
+                <img width="200px" height="120px">
+                <input type="file">
+            </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

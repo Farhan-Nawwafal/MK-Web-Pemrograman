@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(resource/images/y-so-serious.png);
+    font-size: 25px;
+    color: #FFFFDD;
+}
+
+/* pengaturan judul start */
+@font-face{
+    font-family: kanit;
+    src: url("resource/font/Kanit-SemiBold.ttf")
+}
+
+h1#judul {
+    font-family: kanit;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+/* pengaturan judul end */
+
+/*---------pengaturan div start---------*/
+div.container {
+    border: 2px solid white;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.container > div.formulir {
+    width: 750px;
+    height: 250px;
+    margin: auto;
+}
+
+div.container > div.container-image {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #F8DE22;
+    margin: auto;
+}
+/*---------pengaturan div end---------*/
+
+/*---------pengaturan div formulir start---------*/
+@font-face{
+    font-family: playpen-sans;
+    src: url("resource/font/PlaypenSans-VariableFont_wght.ttf");
+}
+div.container > div.formulir > table > tbody > tr{
+    font-family: playpen-sans;
+}
+
+div.container > div.formulir > div.button{
+    text-align: center;
+}
+
+@font-face{
+    font-family: indie-flower;
+    src: url("resource/font/IndieFlower-Regular.ttf")
+}
+
+div.container > div.formulir > div.button > button{
+    font-family: indie-flower;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 7px;
+    border-style: dotted;
+    margin: 10px;
+    background-color: #FFFD8C;
+    cursor: pointer;
+}
+/*---------pengaturan div formulir end---------*/
+
+/*---------pengaturan div image start---------*/
+div.container > div.container-image > h3{
+    text-align: center;
+    border-bottom: 2px dashed white;
+}
+
+div.container > div.container-image > div.image{
+    margin-left: 50px;
+}
+/*---------pengaturan div image end---------*/
+
+
+
