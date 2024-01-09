@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display CSS</title>
+	<link rel="stylesheet" href="../css/w3.css">
+	
+</head>
+<body>
+	<form name="form1">
+	<script>
+		function tambah(){
+			let a = parseInt(document.form1.a.value);
+			let b = parseInt(document.form1.b.value);
+			let c = a + b;
+			document.form1.c.value = c;
+		}
+		
+		function kurang(){
+			let a = document.form1.a.value;
+			let b = document.form1.b.value;
+			let c = a - b;
+			document.form1.c.value = c;
+		}
+		
+		function bagi(){
+			let a = document.form1.a.value;
+			let b = document.form1.b.value;
+			let c = a / b;
+			document.form1.c.value = c;
+		}
+		
+		function kali(){
+			let a = document.form1.a.value;
+			let b = document.form1.b.value;
+			let c = a * b;
+			document.form1.c.value = c;
+		}
+		
+		function hapus(){
+			document.form1.a.value = '';
+			document.form1.b.value = '';
+			document.form1.c.value = '';
+		}
+	</script>
+	
+	<div class="w3-container">
+		<div class="panel w3-blue">
+			<center>
+				<h1>Program Kalkulator</h1>
+			</center>
+		</div>
+		
+		<div class="w3-panel w3-purple">
+			<center>
+				<table>
+					<tr>
+						<td>A</td>
+						<td>
+							: <input name="a"> 
+						</td>
+					</tr>
+					<tr>
+						<td>B</td>
+						<td>
+							: <input name="b"> 
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"></td>
+						
+					</tr>
+					<tr>
+						<td>C</td>
+						<td>
+							: <input name="c">
+						</td>
+					</tr>
+				</table>
+			</center>
+		</div>
+		<center>
+			<div class="w3-panel w3-round-xxlarge w3-cyan w3-display-bottom">
+				<p>
+					<input type="button" class="w3-button w3-red w3-circle" value="+" onclick="tambah()">
+					<input type="button" class="w3-button w3-red w3-circle" value="-" onclick="kurang()">
+					<input type="button" class="w3-button w3-red w3-circle" value="/" onclick="bagi()">
+					<input type="button" class="w3-button w3-red w3-circle" value="*" onclick="kali()">
+					<input type="button" class="w3-button w3-red w3-circle" value="C" onclick="hapus()">
+				</p>
+			</div>
+		</center>
+	</div>
+</body>
+</html>

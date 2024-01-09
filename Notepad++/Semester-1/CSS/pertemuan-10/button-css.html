@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display CSS</title>
+	<link rel="stylesheet" href="../css/w3.css">
+</head>
+<body>
+
+<!-- buat input button -->
+<form name="form1">
+<script>
+	function proses(){
+		alert("HALO BANDUNG");
+	}
+</script>
+</form>
+
+<!-- buat button button -->
+<form action="test.html" method="post"> 
+		<div class="w3-container">
+			<!-- Pake input button -->
+			<input type="button" class="w3-display-container w3-red" value="Input Button" onclick="proses()">
+			
+			<!-- Pake button button -->
+			<button class="w3-button w3-indigo">Button Button</button>
+
+			<!-- Pake link button -->
+			<a class="w3-button w3-deep-orange" href="test.html">Link Button</button>
+		</div>
+</form>
+</body>
+</html>

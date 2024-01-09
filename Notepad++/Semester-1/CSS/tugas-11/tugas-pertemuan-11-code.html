@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width-device-width" initial-scale="1">
+	<title>Belajar CSS Input dan Label</title>
+	<link rel="stylesheet" href="../css/w3.css">
+	<style>
+		h1{
+			text-transform: uppercase;
+			text-align: center;
+		}
+	</style>
+	
+	<script>
+		function makan(){
+			alert("Makan bukanlah hobby! Melainkan kewajiban");
+		}
+		
+		function jenisKelamin(){
+			alert("Tidak mungkin Anda tidak memiliki jenis kelamin!");
+		}
+		
+		function kirim(){
+			alert("Data Anda telah tersimpan. Terima kasih telah mengisi formulirnya!");
+			document.body = onload();
+		}
+		
+		function reset(){
+			document.body = onload();
+		}
+	</script>
+</head>
+
+<body>
+	<!-- judul utama -->
+	<div class="w3-container w3-indigo">
+		<h1 class="w3-text-deep-orange">Formulir Data Siswa Kelas IT-1</h1>
+	</div>
+
+	<!-- formulir -->
+	<div class="w3-container w3-sand">
+		<!-- data siswa -->
+		<div class="w3-card-4 w3-green">
+			<h2 class="w3-padding">Data Siswa</h2>
+		</div>
+		<!-- formulir siswa -->
+		<form class="w3-container">
+			<!-- NIM -->
+			<label>NIM :</label>
+			<input class="w3-input w3-hover-light-blue w3-border w3-round-large" type="text" name="nim" placeholder="Isi NIM Anda"></input>
+			
+			<br>
+			
+			<!-- Nama Lengkap -->
+			<label>Nama Lengkap : </label>
+			<input class="w3-input w3-hover-light-blue w3-border w3-round-large" type="text" name="nama-lengkap" placeholder="Isi Nama Lengkap Anda"></input>
+			
+			<!-- Hobby Anda -->
+			<label>
+				<h2 class="w3-card-4 w3-deep-orange w3-padding">Hobby Anda</h2>
+			</label>
+			<input class="w3-check" type="checkbox" name="hobby"></input> Jogging <br>
+			<input class="w3-check" type="checkbox" name="hobby" onmouseover="makan()" disabled ></input> Makan <br>
+			<input class="w3-check" type="checkbox" name="hobby"></input> Coding<br>
+			
+			<!-- Jenis Kelamin -->
+			<label>
+				<h2 class="w3-card-4 w3-purple w3-padding">Jenis Kelamin</h2>
+			</label>
+			<input class="w3-radio" type="radio" name="jk"></input> Pria<br>
+			<input class="w3-radio" type="radio" name="jk"></input> Wanita <br>
+			<input class="w3-radio" type="radio" name="jk" onmouseover="jenisKelamin()" disabled></input> Tidak Tahu<br>
+			
+			<!-- Tempat Favorit -->
+			<label>
+				<h2 class="w3-card-4 w3-khaki w3-padding">Tempat Favorit Kamu</h2>
+			</label>
+			<select class="w3-select" name="tempat-favorit">
+				<option value="" disabled selected>Pilih salah satu</option>
+				<option value="alun-alun-bandung">Alun-Alun Bandung</option>
+				<option value="gedung-sate">Gedung Sate</option>
+				<option value="taman-arthapark">Taman Arthapark</option>
+				<option value="mall">Mall</option>
+			</select>
+			<br><br>
+			<!-- button -->
+			<button class="w3-button w3-red w3-round-xxlarge" onclick="kirim()">Kirim</button>
+			<button class="w3-button w3-red w3-round-xxlarge" onclick="reset()">Reset</button>
+		</form>
+		
+		
+	</div>
+</body>
+
+</html>

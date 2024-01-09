@@ -1,0 +1,104 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<body>
+	<div class="w3-container">
+		<h2>Menampilkan Berbagai Animasi dalam W3CSS</h2>
+		<p>Click Pada Menu Dibawah</p>
+	</div>
+	
+	<div class="w3-bar w3-orange w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="openKota('Top')">Top</button> <!-- bar item adalah untuk item barnya--> 
+		<button class="w3-bar-item w3-button" onclick="openKota('Bottom')">Bottom</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Left')">Left</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Spin')">Spin</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Fading')">Fading</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Zoom')">Zoom</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Opacity')">Opacity</button>
+		
+		<!-- Tambahan materi : Menu Dropdown -->
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">Dropdown</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4"> <!-- Untuk menamplilkan dropdown, pake class itu -->
+				<button class="w3-bar-item w3-button" onclick="openKota('Cirebon')">Cirebon</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Kircon')">Kircon</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('Latihan11')">Latihan11</button>
+			</div>
+		</div>
+	</div>
+	
+	<div id="Top" class="w3-container kota w3-animate-top w3-red" style="display:none">
+		<center>
+			<h1>ANIMATE TOP</h1>
+		</center>
+		Menampilkan animasi dari atas ke bawah.
+	</div>
+	
+	<div id="Bottom" class="w3-container kota w3-animate-bottom w3-red" style="display:none">
+		<center>
+			<h1>ANIMATE BOTTOM</h1>
+		</center>
+		<p>
+			Menampilkan animasi dari bawah ke atas.
+		</p>
+	</div>
+	
+	<div id="Left" class="w3-container kota w3-animate-Left w3-red" style="display:none">
+		<center>
+			<h1>ANIMATE LEFT</h1>
+		</center>
+		<p>Menampilkan animasi dari kiri ke kanan</p>
+	</div>
+	
+	<div id="Spin" class="w3-container kota w3-spin" style="display:none">
+		<center>
+			<h1>ANIMATE SPIN</h1>
+		</center>
+		<p>Menampilkan animasi spin</p>
+	</div>
+	
+	<div id="Fading" class="w3-container kota w3-animate-fading w3-red" style="display:none">
+		<center>
+			<h1>ANIMATE FADING</h1>
+		</center>
+		<p>Menampilkan animasi fading</p>
+	</div>
+	
+	<div id="Zoom" class="w3-container kota w3-animate-zoom w3-red" style="display:none">
+		<center>
+			<h1>ANIMATE ZOOM</h1>
+		</center>
+		<p>Menampilkan animasi zoom</p>
+	</div>
+	
+	<div id="Opacity" class="w3-container kota w3-animate-opacity w3-red" style="display:none">
+		<center>
+			<h1>ANIMATE OPACITY</h1>
+		</center>
+		<p>Menampilkan animasi opacity</p>
+	</div>
+	
+	<div id="Cirebon" class="w3-container kota w3-animate-zoom w3-red" style="display:none">
+		<center>
+			<h1>CIREBON</h1>
+		</center>
+	</div>
+	
+	<div id="Latihan11" class="w3-container kota w3-animate-zoom w3-red" style="display:none">
+		<center>
+			<h1>LATIHAN 11</h1>
+		</center>
+	</div>
+	
+	<script>
+		function openKota(namakota) {
+			var i;
+			var x = document.getElementsByClassName("kota");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 
+			}
+			document.getElementById(namakota).style.display = "block"; 
+			alert(document.getElementById(namaKota));
+		}
+	</script>
+	
+	

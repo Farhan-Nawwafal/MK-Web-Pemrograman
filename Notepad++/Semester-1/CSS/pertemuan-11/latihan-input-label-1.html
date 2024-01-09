@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width-device-width" initial-scale="1">
+	<title>Belajar CSS Input dan Label</title>
+	<link rel="stylesheet" href="../css/w3.css">
+</head>
+
+<body>
+	<!-- judul utama -->
+	<center>
+		<h1>Input Card</h1>
+	</center>
+	<hr>
+	<div class="w3-container">
+		<div class="w3-card-4 w3-green" style="width:50%;">
+			<h2>Data Nama</h2>
+		</div>
+		<form class="w3-container">
+			<label>NIM : </label>
+			<input class="w3-input w3-border w3-round-large w3-red" type="text" style="width:50%" name="nim"></input>
+				
+			<label>Nama Lengkap : </label>
+			<input class="w3-input w3-border w3-round-large w3-blue" type="text" style="width:50%" name="nama-lengkap"></input>
+				
+			<label>Hobby : </label>
+			<input class="w3-check" type="checkbox" name="hobby" checked="checked"></input> Makan
+			<input class="w3-check" type="checkbox" name="hobby"></input> Minum
+			<input class="w3-check" type="checkbox" name="hobby" disabled></input> Rebahan
+			
+			<br>
+			
+			<label>Jenis Kelamin : </label>
+			<input class="w3-radio" type="radio" value="Pria" name="jk">
+			<label>Pria</label>
+			<input class="w3-radio" type="radio" value="Wanita" name="jk">
+			<label>Wanita</label>
+			<input class="w3-radio" type="radio" value="" name="jk" disabled>
+			<label>Gatau</label>
+		</form>
+
+	
+	</div>
+</body>
+
+</html>

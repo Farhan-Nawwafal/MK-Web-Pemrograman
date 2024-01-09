@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="../css/w3.css">
+	<style>
+		img{
+			cursor: pointer;
+		}
+		a{
+			text-decoration: none;
+		}
+	</style>
+	<script>
+		function farhan(){
+			alert("Ini adalah foto Farhan Nawwafal");
+			document.body.style.backgroundColor = "lightblue";
+			document.body.style.textTransform = "uppercase";
+		}
+		function devfest(){
+			alert("Ini adalah foto event Devfest Bandung 2023");
+			document.body.style.backgroundColor = "white";
+			document.body.style.textTransform = "";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="w3-container">
+		<div class="w3-panel w3-red">
+			<center>
+				<h1>Menampilkan Gambar Untuk Dijadikan Tombol :</h1>
+			</center>
+		</div>
+	</div>
+	<div class="w3-container w3-display-container">
+		<div class="w3-padding">
+			<img src="my-photo(rounded).png" width="200px" heigth="100px" onclick="farhan()">
+			<img src="devfest.jpg" width="200px" heigth="100px" onclick="devfest()">
+		</div>
+
+		<div class="w3-bottom w3-padding w3-text-black w3-button w3-deep-orange w3-round-large" style="width:fit-content;">
+			<a href="TUGAS_10_Farhan Nawwafal_IF4.html">Halaman Utama</a>
+		</div>
+	</div>
+	
+</body>
+</html>

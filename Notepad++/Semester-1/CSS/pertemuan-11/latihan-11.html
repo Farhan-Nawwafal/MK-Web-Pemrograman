@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display CSS</title>
+	<link rel="stylesheet" href="../css/w3.css">
+	<script>
+		function proses(){
+			// alert(document.form.makan.checked);
+			
+			// tampung variable tunjangan 
+			let gajiTambahan, totalGaji
+			
+			// tunjangan jabatan
+			let manager, produksi, pemasaran, staff, ob;
+			
+			// tunjangan Pendidikan
+			let sarjana1, sarjana2, sarjana3;
+			
+			// tunjangan 
+			let makan, transport, anak;
+			
+			// cek jabatan 
+			let jabatan = document.form.jabatan.value;
+			if (jabatan === "manager"){
+				jabatan = manager = 8000000;
+				document.form.gajiPokok.value = manager;
+			} else if (jabatan === "produksi"){
+				jabatan = produksi = 6000000;
+				document.form.gajiPokok.value = produksi;
+			} else if (jabatan === "pemasaran"){
+				jabatan = pemasaran = 7000000;
+				document.form.gajiPokok.value = pemasaran;
+			} else if (jabatan === "staff"){
+				jabatan = staff = 5000000;
+				document.form.gajiPokok.value = staff;
+			} else if (jabatan === "OB"){
+				jabatan = ob = 3000000;
+				document.form.gajiPokok.value = ob;
+			} 
+			
+			// cek Pendidikan
+			let pendidikan = document.form.pendidikan.value;
+			// jika yang user pilih pendidikan sarjana
+			if (pendidikan === "S1"){
+				sarjana1 = 1000000;
+				if ((document.form.makan.checked) && (document.form.transport.checked) && (document.form.anak.checked))	{ // jika yang user pilih 3 checkbox
+					makan = 500000;
+					transport = 600000;
+					anak = 1000000;
+					gajiTambahan = sarjana1 + makan + transport + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if ((document.form.makan.checked) && (document.form.transport.checked)){ // jika cuma makan sama transport aja yang dipilih
+					makan = 500000;
+					transport = 600000;
+					gajiTambahan = sarjana1 + makan + transport;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if ((document.form.makan.checked) && (document.form.anak.checked)){ // jika cuma makan sama anak aja yang dipilih
+					makan = 500000;
+					anak = 1000000;
+					gajiTambahan = sarjana1 + makan + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if ((document.form.transport.checked) && (document.form.anak.checked)){ // jika cuma transport sama anak aja yang dipilih
+					transport = 600000;
+					anak = 1000000;
+					gajiTambahan = sarjana1 + transport + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if (document.form.makan.checked){ // jika yang dipilih cuma makan aja 
+					makan = 500000;
+					gajiTambahan = sarjana1 + makan;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if (document.form.transport.checked){ // jika yang dipilih cuma transport aja 
+					transport = 600000;
+					gajiTambahan = sarjana1 + transport;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if (document.form.anak.checked){ // jika yang dipilih cuma anak aja 
+					anak = 1000000;
+					gajiTambahan = sarjana1 + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+				} else {
+					gajiTambahan = 0;
+				}
+				
+			} else if (pendidikan === "S2"){
+				sarjana2 = 2000000;
+				if ((document.form.makan.checked) && (document.form.transport.checked) && (document.form.anak.checked))	{ // jika yang user pilih 3 checkbox
+					makan = 500000;
+					transport = 600000;
+					anak = 1000000;
+					gajiTambahan = sarjana2 + makan + transport + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if ((document.form.makan.checked) && (document.form.transport.checked)){ // jika cuma makan sama transport aja yang dipilih
+					makan = 500000;
+					transport = 600000;
+					gajiTambahan = sarjana2 + makan + transport;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if ((document.form.makan.checked) && (document.form.anak.checked)){ // jika cuma makan sama anak aja yang dipilih
+					makan = 500000;
+					anak = 1000000;
+					gajiTambahan = sarjana2 + makan + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if ((document.form.transport.checked) && (document.form.anak.checked)){ // jika cuma transport sama anak aja yang dipilih
+					transport = 600000;
+					anak = 1000000;
+					gajiTambahan = sarjana2 + transport + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if (document.form.makan.checked){ // jika yang dipilih cuma makan aja 
+					makan = 500000;
+					gajiTambahan = sarjana2 + makan;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if (document.form.transport.checked){ // jika yang dipilih cuma transport aja 
+					transport = 600000;
+					gajiTambahan = sarjana2 + transport;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if (document.form.anak.checked){ // jika yang dipilih cuma anak aja 
+					anak = 1000000;
+					gajiTambahan = sarjana2 + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+				} else {
+					gajiTambahan = 0;
+				}
+				
+			} else if (pendidikan === "S3"){
+				sarjana3 = 3000000;
+				if ((document.form.makan.checked) && (document.form.transport.checked) && (document.form.anak.checked))	{ // jika yang user pilih 3 checkbox
+					makan = 500000;
+					transport = 600000;
+					anak = 1000000;
+					gajiTambahan = sarjana3 + makan + transport + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if ((document.form.makan.checked) && (document.form.transport.checked)){ // jika cuma makan sama transport aja yang dipilih
+					makan = 500000;
+					transport = 600000;
+					gajiTambahan = sarjana3 + makan + transport;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if ((document.form.makan.checked) && (document.form.anak.checked)){ // jika cuma makan sama anak aja yang dipilih
+					makan = 500000;
+					anak = 1000000;
+					gajiTambahan = sarjana3 + makan + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if ((document.form.transport.checked) && (document.form.anak.checked)){ // jika cuma transport sama anak aja yang dipilih
+					transport = 600000;
+					anak = 1000000;
+					gajiTambahan = sarjana3 + transport + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if (document.form.makan.checked){ // jika yang dipilih cuma makan aja 
+					makan = 500000;
+					gajiTambahan = sarjana3 + makan;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if (document.form.transport.checked){ // jika yang dipilih cuma transport aja 
+					transport = 600000;
+					gajiTambahan = sarjana3 + transport;
+					document.form.tunjanganGaji.value = gajiTambahan;
+					
+				} else if (document.form.anak.checked){ // jika yang dipilih cuma anak aja 
+					anak = 1000000;
+					gajiTambahan = sarjana3 + anak;
+					document.form.tunjanganGaji.value = gajiTambahan;
+				} else {
+					gajiTambahan = 0;
+				}
+			}
+			
+			// hitung tunjangan gaji
+			totalGaji = jabatan + gajiTambahan;
+			document.form.totalGaji.value = totalGaji;
+			
+		}
+	</script>
+</head>
+<body>
+	<form name="form">
+	<div class="w3-container">
+		<div class="panel w3-blue w3-card-4">
+			<center>
+				<h1>PROGRAM GAJI PEGAWAI</h1>
+			</center>
+		</div>
+		
+		<div class="panel w3-orange w3-card-4">
+			<table align="center">
+				<tbody>
+					<tr>
+						<td>
+							<label>Nama Pegawai : </label>
+						</td>
+						<td>
+							<input type="text" class="w3-input" name="namaPegawai">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<label>Jabatan : </label>
+						</td>
+						<td>
+							<select class="w3-select" name="jabatan">
+								<option value="" selected disabled>Pilih jabatan</option>
+								<option value="manager">MANAGER</option>
+								<option value="produksi">PRODUKSI</option>
+								<option value="pemasaran">PEMASARAN</option>
+								<option value="staff">STAFF</option>
+								<option value="ob">OB</option>
+							</select>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Pendidikan : </td>
+						<td>
+							<input type="radio" name="pendidikan" class="w3-radio" value="S1"> S1 
+							<input type="radio" name="pendidikan" class="w3-radio" value="S2"> S2 
+							<input type="radio" name="pendidikan" class="w3-radio" value="S3"> S3 
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Tunjangan : </td>
+						<td>
+							<input type="checkbox" class="w3-checkbox" name="makan"> Makan <br>
+							<input type="checkbox" class="w3-checkbox" name="transport"> Transport <br>
+							<input type="checkbox" class="w3-checkbox" name="anak"> Anak <br>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Gaji Pokok : </td>
+						<td>
+							<input type="text" class="w3-input" name="gajiPokok">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Tunjangan Gaji : </td>
+						<td>
+							<input type="text" class="w3-input" name="tunjanganGaji">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Total Gaji : </td>
+						<td>
+							<input type="text" class="w3-input" name="totalGaji">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="panel w3-light-blue w3-card-4">
+		<p>
+			<center>
+				<input type="button" class="w3-button w3-red w3-round-xxlarge" style="width:200" value="PROSES" onclick="proses()">
+				<input type="button" class="w3-button w3-red w3-round-xxlarge" style="width:200" value="RESET" onclick="hapus()">
+			</center>
+		</p>
+		</div>
+	</div>
+	</form>
+</body>
+</html>
